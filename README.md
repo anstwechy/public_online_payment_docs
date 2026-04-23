@@ -17,6 +17,16 @@ mkdocs serve
 
 Open `http://127.0.0.1:8000`.
 
+## GitHub Pages (Actions)
+
+This repo includes **`.github/workflows/pages.yml`**. In the GitHub repo:
+
+1. **Settings → Pages** — set **Build and deployment → Source** to **GitHub Actions** (not “Deploy from a branch”).  
+2. Push to **`main`** so the workflow runs (or run it manually under **Actions**).  
+3. When the **deploy** job finishes, the site is available at **`https://anstwechy.github.io/public_online_payment_docs/`** (unless you use a custom domain).
+
+If nothing runs, confirm **Settings → Actions → General** allows workflows and that **Settings → Pages** shows the “GitHub Actions” workflow as the publishing source.
+
 ## GitLab Pages
 
 This repo includes **`.gitlab-ci.yml`**. After you push to GitLab:
