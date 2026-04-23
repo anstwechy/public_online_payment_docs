@@ -1,0 +1,82 @@
+/* Masarat-inspired palette aligned with masarat.ly corporate fintech identity */
+:root {
+  --masarat-teal: #0a6b63;
+  --masarat-teal-dark: #064e48;
+  --masarat-teal-light: #0d8a7f;
+  --masarat-gold: #c9a227;
+  --masarat-gold-muted: #e8d48a;
+  --masarat-surface: #f4f9f8;
+  --masarat-text: #1a2e2c;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--masarat-teal);
+  --md-primary-fg-color--light: var(--masarat-teal-light);
+  --md-primary-fg-color--dark: var(--masarat-teal-dark);
+  --md-accent-fg-color: var(--masarat-gold);
+  --md-typeset-a-color: var(--masarat-teal-light);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--masarat-teal-light);
+  --md-primary-fg-color--light: #12a89a;
+  --md-primary-fg-color--dark: var(--masarat-teal);
+  --md-accent-fg-color: var(--masarat-gold-muted);
+  --md-typeset-a-color: #5eead4;
+}
+
+.md-header {
+  background: linear-gradient(
+    90deg,
+    var(--masarat-teal-dark) 0%,
+    var(--masarat-teal) 45%,
+    #0a5c55 100%
+  );
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.md-nav__link--active {
+  font-weight: 600;
+}
+
+.md-typeset h1 {
+  color: var(--masarat-teal-dark);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #ecfdf5;
+}
+
+/* Hero band on home — subtle card like masarat.ly sections */
+.masarat-hero {
+  background: linear-gradient(
+    135deg,
+    rgba(10, 107, 99, 0.08) 0%,
+    rgba(201, 162, 39, 0.06) 100%
+  );
+  border: 1px solid rgba(10, 107, 99, 0.15);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.masarat-hero p:last-child {
+  margin-bottom: 0;
+}
+
+.masarat-tagline {
+  font-size: 0.9rem;
+  color: var(--masarat-teal-dark);
+  opacity: 0.9;
+  margin-top: 0.25rem;
+}
+
+[data-md-color-scheme="slate"] .masarat-tagline {
+  color: #99f6e4;
+}
+
+.md-footer {
+  border-top: 1px solid rgba(10, 107, 99, 0.2);
+}

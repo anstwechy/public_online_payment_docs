@@ -1,0 +1,74 @@
+# After GitLab Pages is enabled, set site_url to:
+# https://<namespace>.gitlab.io/<project_name>/
+# (GitLab → Deploy → Pages shows the exact URL.)
+site_name: Masarat MITF — Merchant guide
+site_description: Install, configure, and run the MITF WooCommerce payment plugin — مسارات
+site_author: Masarat — مسارات لتقنية المعلومات والخدمات المالية
+repo_url: https://github.com/anstwechy/public_online_payment_docs
+repo_name: GitHub
+edit_uri: edit/main/docs/
+
+copyright: >
+  Masarat — مسارات لتقنية المعلومات والخدمات المالية &middot;
+  <a href="https://masarat.ly/">masarat.ly</a>
+
+theme:
+  name: material
+  logo: assets/masarat-logo.svg
+  favicon: assets/favicon.svg
+  language: en
+  font:
+    text: Tajawal
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Merchants:
+      - Install the plugin: merchants/install.md
+      - Configure checkout: merchants/configuration.md
+      - Shopper checkout experience: merchants/checkout-experience.md
+      - Day-to-day operations: merchants/daily-operations.md
+      - Test in sandbox: merchants/sandbox-testing.md
+      - Go-live checklist: merchants/go-live-checklist.md
+      - FAQ: merchants/faq.md
+  - Masarat web team: merchants/for-masarat-website.md
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/masarat.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://masarat.ly/
+    - icon: fontawesome/brands/github
+      link: https://github.com/anstwechy/public_online_payment_docs
