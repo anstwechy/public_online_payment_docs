@@ -23,10 +23,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # No pip cache: cache save hits GitHub's cache API; HTML error pages break JSON parsing
+      # and the post-job step can retry for minutes ("Unexpected token '<' ... is not valid JSON").
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
 
       - name: Install dependencies
         run: pip install -r requirements.txt
