@@ -1,6 +1,6 @@
-# After GitLab Pages is enabled, set site_url to:
-# https://<namespace>.gitlab.io/<project_name>/
-# (GitLab → Deploy → Pages shows the exact URL.)
+# GitHub Pages (user site): https://<user>.github.io/<repo>/
+# GitLab alternative: https://<namespace>.gitlab.io/<project_name>/
+site_url: https://anstwechy.github.io/public_online_payment_docs/
 site_name: Masarat MITF — Merchant guide
 site_description: Install, configure, and run the MITF WooCommerce payment plugin — مسارات
 site_author: Masarat — مسارات لتقنية المعلومات والخدمات المالية
